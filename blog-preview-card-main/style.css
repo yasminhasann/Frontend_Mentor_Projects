@@ -20,6 +20,7 @@ body{
     background-color: var(--Yellow);
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -30,6 +31,7 @@ body{
     background-color: var(--White);
     padding: 25px;
     max-width: 380px;
+    margin: auto;
 }
 .img{
     width: 100%;
