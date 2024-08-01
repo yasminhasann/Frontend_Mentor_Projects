@@ -1,29 +1,29 @@
-@media screen and (max-width:1440px) {
-    bod{
-        width: 100%;
-    }
-}
-@media screen and (max-width: 375px) {
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@media (max-width: 375px) {
     body{
     font-size: 12px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--recipe-bg);
     }
-    .img{ 
-        max-width: 400px;
-        margin: auto;
-    }
-    img{
-        width: 100%;
+    .Recipe-page{
+        width: 600vw;
+        display: block;
+        background-color: var(--recipe-bg);
+        /* padding: 30px; */
+        border-radius: 0px;
     }
 }
- @font-face{
+
+
+ /* @font-face{
         font-family: Young Serif;
     src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
  }
  @font-face {
     font-family: Outfit;
     src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
- }
+ } */
 :root{
     --recipe-bg: hsl(0, 0%, 100%);
     --bg : hsl(30, 54%, 90%);
@@ -38,17 +38,16 @@
 
 *{
     box-sizing: border-box;
-    font-family: Outfit;
+    font-family: "Outfit",sans-serif;
 }
 body{
-    background-color: inherit;
     background-color: var(--bg);
     display: grid;
     min-height: 100vh;
     place-content: center;
 }
 .font1{
-    font-family: Young Serif;
+    font-family: 'Young Serif',sans-serif;
     font-weight: 400;
 }
 .Recipe-page{
@@ -115,7 +114,7 @@ hr{
     font-weight: bold;
 }
 .div4 li{
-    font-family: Outfit;
+    font-family: 'Outfit',sans-serif;
     color: var(--font);
     padding: 0px 0px 10px 20px;
 }
